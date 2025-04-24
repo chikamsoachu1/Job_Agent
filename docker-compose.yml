@@ -36,7 +36,7 @@ services:
 
       - ANTHROPIC_ENDPOINT=${ANTHROPIC_ENDPOINT:-https://api.anthropic.com}
 
-      - GOOGLE_API_KEY=AIzaSyAFCeUBqUKCxpIhpVFDd1PdAWQt7j0YuLE
+      - GOOGLE_API_KEY=
 
       - AZURE_OPENAI_ENDPOINT=${AZURE_OPENAI_ENDPOINT:-}
 
