@@ -689,7 +689,8 @@ async def run_custom_agent(
 
         _global_agent_state.clear_stop()
 
-
+        print("i got here")
+        print("I got here")
         extra_chromium_args = [f"--window-size={window_w},{window_h}"]
 
         if use_own_browser:
@@ -706,7 +707,7 @@ async def run_custom_agent(
 
             if chrome_user_data:
 
-                extra_chromium_args += [f"--user-data-dir=app/data/user2-profile"]
+                extra_chromium_args += [f"--user-data-dir=app/data/chrome_data"]
 
                 #include line if you profile switching is needed.
 

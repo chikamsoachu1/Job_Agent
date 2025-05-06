@@ -1,3 +1,4 @@
+
 import asyncio
 
 import argparse
@@ -49,7 +50,7 @@ async def main():
 
     
 
-    timeout_duration = 1 * 60  # 15 minutes in seconds
+    timeout_duration = 15 * 60  # 15 minutes in seconds
 
     start_time = time.time()
 
@@ -70,7 +71,7 @@ async def main():
 
             print(tasks)
 
-            chrome_user_data="app/data/user1-profile" if Counter % 2==0 else "app/data/user2-profile"
+            chrome_user_data="app/data/chrome_data" if Counter % 2==0 else "app/data/chrome_data"
 
             
 
@@ -78,7 +79,7 @@ async def main():
 
                 agent_type="custom",
 
-                max_steps= 100,
+                max_steps= 15,
 
                 max_actions_per_step= 10,
 
@@ -88,7 +89,7 @@ async def main():
 
                 llm_provider="google",
 
-                llm_model_name= "gemini-1.5-flash",
+                llm_model_name= "gemini-2.0-flash",
 
                 llm_temperature=1.0,
 

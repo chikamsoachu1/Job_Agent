@@ -4,10 +4,10 @@
 
 
 
-find /app/data/user1-profile -name "Singleton*" -delete
+find /home/appuser/chrome_data -name "Singleton*" -delete
 
 
-find /app/data/user2-profile -name "Singleton*" -deletex
+find /app/data/chrome_data -name "Singleton*" -deletex
 
 
 

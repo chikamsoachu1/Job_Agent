@@ -439,7 +439,11 @@ async def run_custom_agent(
         cdp_url = chrome_cdp
         if use_own_browser:
             cdp_url = os.getenv("CHROME_CDP", chrome_cdp)
-
+            print("THIS IS A BOLD DECLARATION THAT I GOT HERE")
+            print("THIS IS A BOLD DECLARATION THAT I GOT HERE")
+            print("THIS IS A BOLD DECLARATION THAT I GOT HERE")
+            print("THIS IS A BOLD DECLARATION THAT I GOT HERE")
+            print("THIS IS A BOLD DECLARATION THAT I GOT HERE")
             chrome_path = os.getenv("CHROME_PATH", None)
             if chrome_path == "":
                 chrome_path = None
@@ -454,6 +458,9 @@ async def run_custom_agent(
         # Initialize global browser if needed
         # if chrome_cdp not empty string nor None
         if (_global_browser is None) or (cdp_url and cdp_url != "" and cdp_url != None):
+
+            print("THIS IS A BOLD DECLARATION THAT I GOT HERE stop 1")
+            print("THIS IS A BOLD DECLARATION THAT I GOT HERE stop 1")
             _global_browser = CustomBrowser(
                 config=BrowserConfig(
                     headless=headless,
